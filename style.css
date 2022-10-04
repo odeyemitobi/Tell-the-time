@@ -1,4 +1,31 @@
 body{
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(img/mawnin.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 5rem;
+}
+.ada-box{
+    width: 100%;
+    color: white;
+    position: relative;
+    padding-bottom: 9rem;
+}
+.clock-container{
+    color: white;
+}
+.clock{
+    color: white;
+    font-size: 80px;
+}
+.user{
+    font-size: 1rem;
 }
