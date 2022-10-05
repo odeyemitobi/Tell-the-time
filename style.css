@@ -2,6 +2,7 @@ body{
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    max-width: 100%;
     font-family: 'Poppins', sans-serif;
 }
 .header{
@@ -10,8 +11,8 @@ body{
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
     background-position: center;
     background-size: cover;
-    position: relative;
-    padding: 5rem;
+    position: fixed;
+    padding-left: 9rem;
 }
 .ada-box{
     width: 100%;
@@ -25,10 +26,61 @@ body{
 .clock{
     color: white;
     font-size: 80px;
+    font-weight: 600;
 }
 .user{
     font-size: 1rem;
 }
 small{
     font-size: 25px;
+}
+
+/* media query */
+@media(max-width:768px){
+    .ada-box{
+        font-size: 17px;
+    }
+    .clock-container{
+        font-size: 20px;
+    }
+    .clock-container .user{
+        font-size: 15px;
+        font-weight: 200;
+    }
+    .clock-container .clock{
+        font-size: 90px;
+    }
+}
+@media(max-width:1024px){
+    .ada-box{
+        font-size: 23px;
+    }
+    .clock-container{
+        font-size: 20px;
+    }
+    .clock-container .user{
+        font-size: 15px;
+        font-weight: 200;
+    }
+    .clock-container .clock{
+        font-size: 90px;
+    }
+}
+@media(max-width:425px){
+    .header{
+        text-align: left;
+    }
+    .ada-box{
+        font-size: 13px;
+    }
+    .clock-container{
+        font-size: 20px;
+    }
+    .clock-container .user{
+        font-size: 15px;
+        font-weight: 200;
+    }
+    .clock-container .clock{
+        font-size: 90px;
+    }
 }
